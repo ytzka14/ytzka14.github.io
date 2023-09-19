@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="karaoke.css"/>
+	</head>
+	<body>
+		<header>
+			<a href="../readme.md" class="headlink">
+				<span>カラオケ収録目録</span>
+			</a>
+		</header>
+		<div class="song-table">
+			<table id="main-table">
+				<tr>
+					<th onclick="sortTable(0)">曲名</th>
+					<th onclick="sortTable(1)">作曲家</th>
+					<th onclick="sortTable(2)">ボーカル</th>
+					<th>JOYSOUND 家庭用</th>
+				</tr>
+				<tr>
+					<td>Leia</td>
+					<td>ゆよゆっぺ</td>
+					<td>巡音ルカ</td>
+					<td>736772</td>
+				</tr>
+				<tr>
+					<td>草木</td>
+					<td>長谷川白紙</td>
+					<td>長谷川白紙</td>
+					<td>447070</td>
+				</tr>
+				<tr>
+					<td>きゅうくらりん</td>
+					<td>いよわ</td>
+					<td>可不</td>
+					<td>494524</td>
+				</tr>
+				<tr>
+					<td>廃景に鉄塔、「千鶴」は田園にて待つ。</td>
+					<td>トーマ</td>
+					<td>ウォルピスカーター</td>
+					<td>436509</td>
+				</tr>
+				<tr>
+					<td>-ERROR</td>
+					<td>niki</td>
+					<td>Lily</td>
+					<td>148065</td>
+				</tr>
+				<tr>
+					<td>+REVERSE</td>
+					<td>niki</td>
+					<td>Lily</td>
+					<td>196063</td>
+				</tr>
+				<tr>
+					<td>ジッタードール</td>
+					<td>niki</td>
+					<td>Lily</td>
+					<td>196058</td>
+				</tr>
+				<tr>
+					<td>shiningray</td>
+					<td>164</td>
+					<td>初音ミク</td>
+					<td>178668</td>
+				</tr>
+				<tr>
+					<td>初音天地開闢神話</td>
+					<td>cosMo@暴走P</td>
+					<td>初音ミク</td>
+					<td>493710</td>
+				</tr>
+				<tr>
+					<td>僕は空気が嫁ない</td>
+					<td>cosMo@暴走P</td>
+					<td>GUMI</td>
+					<td>733301</td>
+				</tr>
+				<tr>
+					<td>幾望の月</td>
+					<td>なきゃむりゃ</td>
+					<td>結月ゆかり</td>
+					<td>433813</td>
+				</tr>
+				<tr>
+					<td>ミルククラウン・オン・ソーネチカ</td>
+					<td>ユジー</td>
+					<td>初音ミク</td>
+					<td>312985</td>
+				</tr>
+				<tr>
+					<td>しわ</td>
+					<td>buzzG</td>
+					<td>GUMI</td>
+					<td>732803</td>
+				</tr>
+				<tr>
+					<td>Fairytale,</td>
+					<td>buzzG</td>
+					<td>GUMI</td>
+					<td>731774</td>
+				</tr>
+				<tr>
+					<td>Andromeda</td>
+					<td>ナノウ</td>
+					<td>星街すいせい</td>
+					<td>492984</td>
+				</tr>
+				<tr>
+					<td>ロストエンファウンド</td>
+					<td>sasakure.UK</td>
+					<td>初音ミク</td>
+					<td>196028</td>
+				</tr>
+				<tr>
+					<td>QUI</td>
+					<td>有形ランペイジ</td>
+					<td>有形ランペイジ</td>
+					<td>487199</td>
+				</tr>
+				<tr>
+					<td>閃光</td>
+					<td>[Alexandros]</td>
+					<td>[Alexandros]</td>
+					<td>490445</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
+
+<script>
+function sortTable(n) {
+	var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+	table = document.getElementById("main-table");
+	switching = true;
+	dir = "asc";
+	while (switching) {
+		switching = false;
+		rows = table.rows;
+		for (i = 1; i < (rows.length - 1); i++) {
+			shouldSwitch = false;
+			x = rows[i].getElementsByTagName("td")[n];
+			y = rows[i+1].getElementsByTagName("td")[n];
+			if (dir == "asc") {
+				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+					shouldSwitch = true;
+					break;
+				}
+			} else if (dir == "desc") {
+				if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+					shouldSwitch = true;
+					break;
+				}
+			}
+		}
+		if (shouldSwitch) {
+			rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+			switching = true;
+			switchcount ++;
+		} else {
+			if (switchcount == 0 && dir == "asc") {
+				dir = "desc";
+				switching = true;
+			}
+		}
+	}
+}
+</script>
