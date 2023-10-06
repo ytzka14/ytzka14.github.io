@@ -1,4 +1,4 @@
-import DataTable from './DataTable'
+import DataTable from './DataTable.tsx'
 import './App.css'
 
 function App() {
