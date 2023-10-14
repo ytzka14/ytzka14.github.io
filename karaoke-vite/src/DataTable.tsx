@@ -7,6 +7,7 @@ interface iType {
 	Composer: string;
 	Vocal: string;
 	JOYSOUND: number;
+	Date: number;
 }
 
 const DataTable: React.FC = () => {
@@ -15,9 +16,14 @@ const DataTable: React.FC = () => {
 		return jsonString.replace(unicodeRegex, (_, p1) => String.fromCharCode(parseInt(p1, 16)));
 	};
 
+	const datify = (jsonDate: number) => {
+		const date = new Date(jsonDate);
+		return date;
+	}
+
 	const initializeUnicode = (data: iType[]) => {
 		return data.map((item) => {
-			const newItem: iType = {Title: unicodify(item.Title), Composer: unicodify(item.Composer), Vocal: unicodify(item.Vocal), JOYSOUND: item.JOYSOUND};
+			const newItem: iType = {Title: unicodify(item.Title), Composer: unicodify(item.Composer), Vocal: unicodify(item.Vocal), JOYSOUND: item.JOYSOUND, Date: item.Date};
 			return newItem;
 		})
 	}
@@ -67,6 +73,16 @@ const DataTable: React.FC = () => {
 					setSorted(7);
 				}
 				break;
+			case 4:
+				if (sorted === 9){
+					setItems([...items].sort((a, b) => (b.Date - a.Date)));
+					setSorted(10);
+				}
+				else {
+					setItems([...items].sort((a, b) => (a.Date - b.Date)));
+					setSorted(9);
+				}
+				break;
 			default:
 				break;
 		}
@@ -79,6 +95,7 @@ const DataTable: React.FC = () => {
 				<th onClick={() => sortBy(1)}>Composer</th>
 				<th onClick={() => sortBy(2)}>Vocal</th>
 				<th onClick={() => sortBy(3)}>JOYSOUND</th>
+				<th onClick={() => sortBy(4)}>Date</th>
 			</thead>
 			<tbody>
 				{items.map((item) => (
@@ -87,6 +104,7 @@ const DataTable: React.FC = () => {
 						<td>{item.Composer}</td>
 						<td>{item.Vocal}</td>
 						<td>{item.JOYSOUND}</td>
+						<td>{datify(item.Date).toDateString()}</td>
 					</tr>
 				))}
 			</tbody>
