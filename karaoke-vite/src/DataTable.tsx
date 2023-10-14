@@ -18,7 +18,7 @@ const DataTable: React.FC = () => {
 
 	const datify = (jsonDate: number) => {
 		const date = new Date(jsonDate);
-		return `${date.getUTCFullYear()}.${(date.getUTCMonth()+1).toFixed(2)}.${date.getUTCDate().toFixed(2)}`;
+		return `${date.getUTCFullYear()}.${String(date.getUTCMonth()+1).padStart(2, '0')}.${String(date.getUTCDate()).padStart(2, '0')}`;
 	}
 
 	const initializeUnicode = (data: iType[]) => {
