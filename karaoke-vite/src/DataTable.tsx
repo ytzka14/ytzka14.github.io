@@ -18,7 +18,7 @@ const DataTable: React.FC = () => {
 
 	const datify = (jsonDate: number) => {
 		const date = new Date(jsonDate);
-		return date;
+		return date.toLocaleDateString();
 	}
 
 	const initializeUnicode = (data: iType[]) => {
@@ -104,7 +104,7 @@ const DataTable: React.FC = () => {
 						<td>{item.Composer}</td>
 						<td>{item.Vocal}</td>
 						<td>{item.JOYSOUND}</td>
-						<td>{datify(item.Date).toDateString()}</td>
+						<td>{datify(item.Date)}</td>
 					</tr>
 				))}
 			</tbody>
