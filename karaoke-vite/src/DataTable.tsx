@@ -29,7 +29,7 @@ const DataTable: React.FC = () => {
 	}
 
 	const [items, setItems] = useState<iType[]>(initializeUnicode(dataJson));
-	const [sorted, setSorted] = useState(0);
+	const [sorted, setSorted] = useState(10);
 
 	const sortBy = (n: number) => {
 		switch (n) {
