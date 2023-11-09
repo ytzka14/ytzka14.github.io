@@ -1,32 +1,8 @@
-// src/Table.tsx
-import React, { useState } from 'react';
-import dataJson from './assets/karaoke.json'
+import { useState } from 'react';
+import dataJson from './assets/karaoke.json';
+import { iType, datify, initializeUnicode } from './contexts.tsx';
 
-interface iType {
-	Title: string;
-	Composer: string;
-	Vocal: string;
-	JOYSOUND: number;
-	Date: number;
-}
-
-const DataTable: React.FC = () => {
-	const unicodify = (jsonString: string) => {
-		const unicodeRegex = /\\u([\dA-Fa-f]{4})/g;
-		return jsonString.replace(unicodeRegex, (_, p1) => String.fromCharCode(parseInt(p1, 16)));
-	};
-
-	const datify = (jsonDate: number) => {
-		const date = new Date(jsonDate);
-		return `${date.getUTCFullYear()}.${String(date.getUTCMonth()+1).padStart(2, '0')}.${String(date.getUTCDate()).padStart(2, '0')}`;
-	}
-
-	const initializeUnicode = (data: iType[]) => {
-		return data.map((item) => {
-			const newItem: iType = {Title: unicodify(item.Title), Composer: unicodify(item.Composer), Vocal: unicodify(item.Vocal), JOYSOUND: item.JOYSOUND, Date: item.Date};
-			return newItem;
-		})
-	}
+const DataTable = () => {
 
 	const [items, setItems] = useState<iType[]>(initializeUnicode(dataJson));
 	const [sorted, setSorted] = useState(10);
@@ -98,15 +74,16 @@ const DataTable: React.FC = () => {
 				<th onClick={() => sortBy(4)}>Date</th>
 			</thead>
 			<tbody>
-				{items.map((item) => (
-					<tr key={item.JOYSOUND}>
+				{items.map((item) => {
+					return (
+					<tr key={item.JOYSOUND} id={String(item.JOYSOUND)}>
 						<td>{item.Title}</td>
 						<td>{item.Composer}</td>
 						<td>{item.Vocal}</td>
 						<td>{item.JOYSOUND}</td>
 						<td>{datify(item.Date)}</td>
 					</tr>
-				))}
+				)})}
 			</tbody>
 		</>
   );
