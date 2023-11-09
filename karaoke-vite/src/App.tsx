@@ -20,8 +20,9 @@ function App() {
 				</span>
 				<br/>
 				<span className="quote-from">
-					- 「{quote.Title}」, {quote.Composer}
+					- 「{quote.Title}」 / {quote.Composer}
 				</span>
+				<br/>
 			</div>
 		)
 	}
