@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css">
     <title>YtzkA's github blog</title>
   </head>
   <body>
@@ -11,21 +12,33 @@
 				<h3 class="date">pre-intern</h3>
 				<div class="text">
 					<h4>Readings</h4>
-					<span>[TVCG'11-01] J. Stott et al., Automatic Metro Map Layout Using Multicriteria Optimization</span><br/>
-					<span>[TVCG'13-12] N. Ferreira et al., Visual Exploration of Big Spatio-Temporal Urban Data: A Study of New York City Taxi Trips</span><br/>
-					<span>[EuroVis '16] N. Pezzotti et al., Hierarchical Stochastic Neighbor Embedding</span><br/>
-					<span>[TVCG'23-01] C. Vajiac et al., TrafficVis: Visualizing Organized Activity and Spatio-Temporal Patterns for Detecting and Labeling Human Trafficking</span><br/>
-					<span>[PacificVis'23] Y. Kuo et al., Investigating Animal Infectious Diseases with Visual Analytics</span><br/>
+					<h6>[TVCG'11-01] J. Stott et al., Automatic Metro Map Layout Using Multicriteria Optimization</h6>
+					<p>
+						Automatic metro map generation via snapping stations on grid then hill-climbing according to certain criteria. <br/>
+						Many possibilities for modifying criteria. Maybe can apply extension to make better visible in crowded regions such as central Sydney or other cities with more complex networks? <br/>
+						Also, might be able to group edges in railroad network by represented shape (line segment, small arc, or the combination of two, and alignment...) to represent metro maps with curvature (e.g. JR Yamanote line in Tokyo)
+					</p>
+					<h6>[TVCG'13-12] N. Ferreira et al., Visual Exploration of Big Spatio-Temporal Urban Data: A Study of New York City Taxi Trips</h6>
+					<h6>[EuroVis '16] N. Pezzotti et al., Hierarchical Stochastic Neighbor Embedding</h6>
+					<h6>[TVCG'23-01] C. Vajiac et al., TrafficVis: Visualizing Organized Activity and Spatio-Temporal Patterns for Detecting and Labeling Human Trafficking</h6>
+					<p>
+						Grouping in two layers via text similarity and metadata to show vague relationships between human trafficking texts 
+					</p>
+					<h6>[PacificVis'23] Y. Kuo et al., Investigating Animal Infectious Diseases with Visual Analytics</h6>
 				</div><br/>
 			</div>
 			<div class="day">
 				<h3 class="date">23/01/08 Mon</h3>
 				<div class="text">
 					<h4>Work</h4>
-					<span>First day of internship - tutorial</span><br/>
-					<span>Seminar from Dr. Sangho Suh (U of T)</span><br/>
+					<h6>First day of internship - tutorial</h6>
+					<h6>Seminar from Dr. Sangho Suh (U of T)</h6>
+					<p>
+						Human-AI Interaction: Visualizing results of AI such as LLM with certain purposes (e.g. Hierarchical view) <br/>
+						Introduced literature: Luminate, Sensecape, CodeToon
+					</p>
 					<h4>Readings</h4>
-					<span>Lab materials - research tutorial</span><br/>
+					<h6>Lab materials - research tutorial</h6>
 				</div>
 			</div>
 			<div class="day">
@@ -33,9 +46,20 @@
 				<div class="text">
 					<h4>Work</h4>
 					<h4>Readings</h4>
-					<span>J. Wobbrock, J. Kientz, Research Contributions in Human-Computer Interaction</span><br/>
-					<span>[TVCG'20-01] M. Lu et al., Winglets: Visualizing Association with Uncertainty in Multi-class Scatterplots</span><br/>
-					<span>[TVCG'23-03] D. Shin et al., RCMVis: A Visual Analytics System for Route Choice Modeling</span><br/>
+					<h6>J. Wobbrock, J. Kientz, Research Contributions in Human-Computer Interaction</h6>
+					<p>
+						Types of contributions in HCI research - emphasis on empirical research (in terms of amount of papers)
+					</p>
+					<h6>[TVCG'20-01] M. Lu et al., Winglets: Visualizing Association with Uncertainty in Multi-class Scatterplots</h6>
+					<p>
+						Applying 'winglets' to points in scatterplots in order to visualize high-dimensional clusters in 2D space <br/>
+						Design choice evaluations in research - present various candidates and apply edge-cases to see if they qualify
+					</p>
+					<h6>[TVCG'23-03] D. Shin et al., RCMVis: A Visual Analytics System for Route Choice Modeling</h6>
+					<p>
+						Design elements required by field experts but not yet implemented <br/>
+						Usage of large data such as shared bike GPS data from Seoul: How to get data, and how to analyze?
+					</p>
 				</div>
 			</div>
 			<div class="day">
@@ -43,10 +67,37 @@
 				<div class="text">
 					<h4>Work</h4>
 					<h4>Readings</h4>
-					<span>[UIST'00] B. Bederson, Fisheye Menus</span><br/>
-					<span>[TVCG'12-07] C. Healey, J. Enns, Attention and Visual Memory in Visualization and Computer Graphics</span><br/>
-					<span>[CHI'16] A. Oulasvirta, K. Hornbæk, HCI Research as Problem-Solving</span><br/>
-					<span>I. Mackenzie, Fitts' Law, in K. Norman, J. Kirakowski, Handbook of Human-Computer Interaction</span>
+					<h6>[UIST'00] B. Bederson, Fisheye Menus</h6>
+					<h6>[TVCG'12-07] C. Healey, J. Enns, Attention and Visual Memory in Visualization and Computer Graphics</h6>
+					<p>
+						Human elements affect visualization (and how people interpret visualizations) - postattentive amnesia, change blindness, inattentional blindness, attentional blink... <br/>
+						Good visual design: perceptual salience (maintaining ordering between visual features), predictivity, or direct attention such that changes are (not) visible
+					</p>
+					<h6>[CHI'16] A. Oulasvirta, K. Hornbæk, HCI Research as Problem-Solving</h6>
+					<p>
+						Problem-Solving approach to HCI Research: Empirical / Conceptual / Constructive <br/>
+						Good research improves problem-solving capacity - significance, effectiveness, efficiency, transfer, confidence. <br/>
+						Avoid pathological practice, apply problem-solving approach prescriptively to generate ideas. 
+					</p>
+					<h6>I. Mackenzie, Fitts' Law, in K. Norman, J. Kirakowski, Handbook of Human-Computer Interaction</h6>
+					<p>
+						Analogy of human motor system as information transfer - can apply Shannon's information capacity to human movement. <br/>
+						Throughput(TP) = ID / MT = log(2A/W) / MT, where A=movement amplitude, W=target width, ID=index of difficulty, MT=mean movement time.
+					</p>
+				</div>
+			</div>
+			<div class="day">
+				<h3 class="date">23/01/11 Thu</h3>
+				<div class="text">
+					<h4>Work</h4>
+					<p>Lab Seminar</p>
+					<h4>Readings</h4>
+					<h6>[TVCG'16-01] K. Wongsuphasawat et al., Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations</h6>
+					<p>
+						Breadth-first data exploration vs Depth-first data exploration <br/>
+						Data variation vs design variation <br/>
+						Conceptualize data visualization tool/framework: see Vega and Vega-lite
+					</p>
 				</div>
 			</div>
 		</div>
