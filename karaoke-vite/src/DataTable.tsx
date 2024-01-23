@@ -7,6 +7,14 @@ const DataTable = () => {
 	const [items, setItems] = useState<iType[]>(initializeUnicode(dataJson));
 	const [sorted, setSorted] = useState(0);
 
+	const shuffle = () => (array: iType[]) => {
+		for (let i = array.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[array[i], array[j]] = [array[j], array[i]];
+		}
+		return array;
+	}
+
 	const sortBy = (n: number) => {
 		switch (n) {
 			case 0:
@@ -60,7 +68,7 @@ const DataTable = () => {
 				}
 				break;
 			case 5:
-				setItems([...items].sort(() => Math.random()-0.5));
+				setItems(shuffle()([...items]));
 				setSorted(0);
 				break;
 			default:
