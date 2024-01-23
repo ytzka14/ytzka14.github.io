@@ -5,7 +5,7 @@ import { iType, datify, initializeUnicode } from './contexts.tsx';
 const DataTable = () => {
 
 	const [items, setItems] = useState<iType[]>(initializeUnicode(dataJson));
-	const [sorted, setSorted] = useState(10);
+	const [sorted, setSorted] = useState(0);
 
 	const sortBy = (n: number) => {
 		switch (n) {
@@ -59,6 +59,10 @@ const DataTable = () => {
 					setSorted(9);
 				}
 				break;
+			case 5:
+				setItems([...items].sort(() => Math.random()-0.5));
+				setSorted(0);
+				break;
 			default:
 				break;
 		}
@@ -66,6 +70,7 @@ const DataTable = () => {
 
   return (
 		<>
+			<button onClick={() => sortBy(5)}>Shuffle List</button>
 			<thead>
 				<th onClick={() => sortBy(0)}>Title</th>
 				<th onClick={() => sortBy(1)}>Composer</th>
