@@ -1,4 +1,5 @@
 export interface charType {
-	Name: string;
-	Rarity: number;
+	name: string;
+	rarity: number;
+	pickup: boolean;
 }
