@@ -4,7 +4,17 @@
 
 .listBox {
 	height: 60vh;
+	width: 40vh;
 	display: flex;
 	flex-direction: column-reverse;
 	overflow-y: scroll;
+	border: 1px solid gray;
+}
+
+.listItem {
+	height: 10%;
+}
+
+.App {
+	margin: 30px;
 }

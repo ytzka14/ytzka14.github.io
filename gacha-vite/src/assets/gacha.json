@@ -1,22 +1,1027 @@
 [
-	{
-		"name": "Eyjafjalla",
-		"rarity": "6",
-		"pickup": ""
-	},
-	{
-		"name": "Texas",
-		"rarity": "5",
-		"pickup": ""
-	},
-	{
-		"name": "Myrtle",
-		"rarity": "4",
-		"pickup": ""
-	},
-	{
-		"name": "Hibiscus",
-		"rarity": "3",
-		"pickup": ""
-	}
+    {
+        "name": "Siege",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Bagpipe",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Saga",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Saileach",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Flametail",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Vigil",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Ines",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Muelsyse",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Texas",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Зима",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Grani",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Reed",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Elysium",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Chiave",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Wild Mane",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Blacknight",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Cantabile",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Puzzle",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Poncirus",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Scavanger",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Courier",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Vigna",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Myrtle",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Beanstalk",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Fang",
+        "rarity": "3",
+        "pickup": ""
+    },
+    {
+        "name": "Vanila",
+        "rarity": "3",
+        "pickup": ""
+    },
+    {
+        "name": "Plume",
+        "rarity": "3",
+        "pickup": ""
+    },
+    {
+        "name": "Silverash",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Skadi",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Ch'en",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Hellagur",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Blaze",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Thorns",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Surtr",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Mountain",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Pallas",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Irene",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Młynar",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Qiu Bai",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Executor the Ex Foedere",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Franka",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Specter",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Lappland",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Swire",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Astesia",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Broca",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Ayerscarpe",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Flint",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Akafuyu",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "La Pluma",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Wind Chimes",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Лето",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Dobermann",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Beehunter",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Mousse",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Frostleaf",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Matoimaru",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Utage",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Cutter",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Arene",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Jackie",
+        "rarity": "",
+        "pickup": ""
+    },
+    {
+        "name": "Humus",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Melantha",
+        "rarity": "3",
+        "pickup": ""
+    },
+    {
+        "name": "Midnight",
+        "rarity": "3",
+        "pickup": ""
+    },
+    {
+        "name": "Popukar",
+        "rarity": "",
+        "pickup": ""
+    },
+    {
+        "name": "Hoshiguma",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Saria",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Eunectes",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Blemishine",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Mudrock",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Horn",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Penance",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Nearl",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Liskarm",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Croissant",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Hung",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Asbestos",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Ashlock",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Aurora",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Firewhistle",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Cement",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Cuora",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "гум",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Matterhorn",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Bubble",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Cardigan",
+        "rarity": "3",
+        "pickup": ""
+    },
+    {
+        "name": "Spot",
+        "rarity": "3",
+        "pickup": ""
+    },
+    {
+        "name": "Exusiai",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Schwarz",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Роса",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Archetto",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Fartooth",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Fiametta",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "ПОЗЁМКА",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Meteorite",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Blue Poison",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Firewatch",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Province",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Platinum",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Executor",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "GreyThroat",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Sesa",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Andreana",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "April",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Aosta",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Toddifons",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Greyy The Lightningbearer",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Lunacub",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Melanite",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "May",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Meteor",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Shirayuki",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Vermeil",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Ambriel",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Aciddrop",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Pinecone",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Totter",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Kroos",
+        "rarity": "3",
+        "pickup": ""
+    },
+    {
+        "name": "Catapult",
+        "rarity": "3",
+        "pickup": ""
+    },
+    {
+        "name": "Ifrit",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Eyjafjalla",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Mostima",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Ceobe",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Passenger",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Carnelian",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Goldenglow",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Ebenholtz",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Lin",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Ho'olheyak",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Nightmare",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Skyfire",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Leizi",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Leonhardt",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Beeswax",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Iris",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Corroserum",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Rockrock",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Harmonie",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Haze",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Gitano",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Greyy",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Click",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "",
+        "rarity": "",
+        "pickup": ""
+    },
+    {
+        "name": "Indigo",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Steward",
+        "rarity": "3",
+        "pickup": ""
+    },
+    {
+        "name": "Lava",
+        "rarity": "3",
+        "pickup": ""
+    },
+    {
+        "name": "Shining",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Nightingale",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Kal'tsit",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Reed the Flame Shadow",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Ptilopsis",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Silence",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Warfarin",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Whisperain",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Mulberry",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Hibiscus the Purifier",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Paprika",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Myrrh",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Gavial",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Perfumer",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Sussurro",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Chestnut",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Hibiscus",
+        "rarity": "3",
+        "pickup": ""
+    },
+    {
+        "name": "Ansel",
+        "rarity": "3",
+        "pickup": ""
+    },
+    {
+        "name": "Angelina",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Magellan",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Suzuran",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Gnosis",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Stainless",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Pramanix",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Mayer",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Sora",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Истина",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Glaucus",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Shamare",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Tsukinogi",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Quercus",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Windflit",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Proviso",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Deepcolor",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Earthspirit",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Podenco",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Roberta",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Orchid",
+        "rarity": "3",
+        "pickup": ""
+    },
+    {
+        "name": "Aak",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Phantom",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Weedy",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Mizuki",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Lee",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Dorothy",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Swire the ELegant Wit",
+        "rarity": "6",
+        "pickup": ""
+    },
+    {
+        "name": "Projekt Red",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Manticore",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Cliffheart",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "FEater",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Waai fu",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Snowsant",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Kafka",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Mr. Nothing",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Kirara",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Kazemaru",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Spuria",
+        "rarity": "5",
+        "pickup": ""
+    },
+    {
+        "name": "Gravel",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Rope",
+        "rarity": "4",
+        "pickup": ""
+    },
+    {
+        "name": "Jaye",
+        "rarity": "4",
+        "pickup": ""
+    }
 ]
