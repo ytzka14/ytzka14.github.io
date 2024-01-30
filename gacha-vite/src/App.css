@@ -1,5 +1,26 @@
+ul {
+	list-style-type: none;
+}
+
 .charBox {
 	border: black;
+}
+
+.s3 {
+	background-color: lightgray;
+}
+
+.s4 {
+	background-color: mediumslateblue;
+}
+
+.s5 {
+	background-color: gold;
+}
+
+.s6 {
+	background-color: goldenrod;
+	font-weight: bold;
 }
 
 .listBox {

@@ -15,7 +15,7 @@ const Display = (props: {arr: charType[]}) => {
 		return (
 			<>
 				<li key={keyGen()} className="listItem">
-					<div className="charBox">
+					<div className={"charBox s"+String(char.rarity)}>
 						<span>{char.name}</span><br/>
 						<span>{char.rarity}</span>
 					</div>
