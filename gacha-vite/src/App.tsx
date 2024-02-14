@@ -11,6 +11,11 @@ let dispFiveProb = 0.08;
 let dispFourProb = 0.5;
 let dispThreeProb = 0.4;
 
+function funcToFixed(value: number, precision: number) {
+	const power = Math.pow(10, precision || 0);
+	return String(Math.round(value * power) / power);
+}
+
 function App() {
 	const [dispList, setDispList] = useState<charType[]>([])
 	const [rarityCnt, setRarityCnt] = useState([0, 0, 0, 0]);
@@ -35,6 +40,10 @@ function App() {
 	const reset = () => {
 		sixStack = 0;
 		tenStack = 0;
+		dispSixProb = 0.02;
+		dispFiveProb = 0.08;
+		dispFourProb = 0.5;
+		dispThreeProb = 0.4;
 		setDispList([]);
 		setRarityCnt([0, 0, 0, 0]);
 	};
@@ -136,10 +145,10 @@ function App() {
 				<button onClick={reset}>리셋</button><br/>
 				<span>가챠 회수: {sum(rarityCnt)}회</span><br/>
 				<span>소모 합성옥: {sum(rarityCnt) * 600}개</span><br/>
-				<span>오리지늄으로 변환시: {sum(rarityCnt) * 600 / 180}개</span><br/>
+				<span>오리지늄으로 변환시: {funcToFixed(sum(rarityCnt) * 600 / 180, 4)}개</span><br/>
 				<span>레어도별 등장 회수: 6성 {rarityCnt[3]}회, 5성 {rarityCnt[2]}회, 4성 {rarityCnt[1]}회, 3성 {rarityCnt[0]}회</span><br/>
 				<span>6성 스택: {sixStack}회 미등장</span><br/>
-				<span>레어도별 등장 확률: 6성 {dispSixProb}%, 5성 {dispFiveProb}%, 4성 {dispFourProb}%, 3성 {dispThreeProb}%</span>
+				<span>레어도별 등장 확률: 6성 {funcToFixed(dispSixProb*100, 4)}%, 5성 {funcToFixed(dispFiveProb*100, 4)}%, 4성 {funcToFixed(dispFourProb*100, 4)}%, 3성 {funcToFixed(dispThreeProb*100, 4)}%</span>
 			</div>
 		</>
 	)
