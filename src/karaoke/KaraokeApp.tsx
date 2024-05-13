@@ -2,6 +2,7 @@ import DataTable from './DataTable.tsx';
 import './Karaoke.css';
 import quoteJson from './assets/quotes.json';
 import { qType, quoteUnicode } from './KaraokeContexts.tsx';
+import { Link } from 'react-router-dom';
 
 function KaraokeApp() {
 	const randomQuote = () => {
@@ -30,6 +31,7 @@ function KaraokeApp() {
   return (
     <>
       <div className="App">
+        <Link to="/">Go to home.</Link>
         <h1>JOYSOUND 家庭用収録曲</h1>
 				<div className="quote-wrapper">
 					{randomQuote()}
