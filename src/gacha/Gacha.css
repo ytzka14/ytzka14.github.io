@@ -1,0 +1,44 @@
+ul {
+	list-style-type: none;
+}
+
+.charBox {
+	border: black;
+}
+
+.s3 {
+	background-color: lightgray;
+}
+
+.s4 {
+	background-color: mediumslateblue;
+}
+
+.s5 {
+	background-color: gold;
+}
+
+.s6 {
+	background-color: goldenrod;
+	font-weight: bold;
+}
+
+.listBox {
+	height: 60vh;
+	width: 40vh;
+	display: block;
+	flex-direction: column-reverse;
+	overflow-y: scroll;
+	border: 1px solid gray;
+  margin: auto;
+  padding: 0;
+}
+
+.listItem {
+	height: 10%;
+}
+
+.GachaApp {
+	margin: 30px;
+  text-align: center;
+}
