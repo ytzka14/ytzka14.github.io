@@ -1,4 +1,6 @@
 #! /bin/bash
+rm ~/ytzka14.github.io/assets/*
+cp ~/ytzka14.github.io/index-ref.html ~/ytzka14.github.io/index.html
 npm run build
 echo 'build done'
 cp -rf ~/ytzka14.github.io/dist/* ~/ytzka14.github.io/
