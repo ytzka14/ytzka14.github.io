@@ -30,12 +30,12 @@ function KaraokeApp() {
 
   return (
     <>
-      <div className="App">
+      <div className="KaraokeApp">
         <Link to="/">Go to home.</Link>
         <h1>JOYSOUND 家庭用収録曲</h1>
-				<div className="quote-wrapper">
-					{randomQuote()}
-				</div>
+        <div className="quote-wrapper">
+          {randomQuote()}
+        </div>
         <DataTable />
       </div>
     </>
