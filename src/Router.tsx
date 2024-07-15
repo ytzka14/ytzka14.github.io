@@ -3,6 +3,7 @@ import GachaApp from "./gacha/GachaApp";
 import BlogApp from "./blog/BlogApp";
 import FilesApp from "./files/FilesApp";
 import KaraokeApp from "./karaoke/KaraokeApp";
+import MapQuizApp from "./mapquiz/MapQuizApp";
 import Home from "./Home";
 import App from "./App";
 
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "karaoke",
         element: <KaraokeApp />,
+      },
+      {
+        path: "mapquiz",
+        element: <MapQuizApp />,
       },
     ]
   },
