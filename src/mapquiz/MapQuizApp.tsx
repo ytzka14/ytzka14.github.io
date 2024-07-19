@@ -17,7 +17,7 @@ function MapQuizApp() {
 
   return (
     <>
-      <div className="KaraokeApp">
+      <div className="MapQuizApp">
         <Link to="/">Go to home.</Link>
         <h1>Map Quizzes</h1>
         <WriteAllYouCan objects={japanPrefectures} />

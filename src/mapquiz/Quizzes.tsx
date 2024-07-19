@@ -16,10 +16,13 @@ export const WriteAllYouCan = ({objects} : {objects: GeoObject[]}) => {
       setToWrite(toWrite.filter((obj) => obj.name !== inputValue));
       setWritten([...written, ...foundInToWrite]);
       setInputValue("");
+      setErrorMessage("");
     } else if(foundInWritten.length !== 0){
       setErrorMessage("Already written!");
+      setInputValue("");
     } else{
       setErrorMessage("Does not exist!");
+      setInputValue("");
     }
   }
 
@@ -29,10 +32,10 @@ export const WriteAllYouCan = ({objects} : {objects: GeoObject[]}) => {
       <span className="error-message">{errorMessage}</span>
       <input
         type="text"
+        value={inputValue}
         onChange={(e) => {
           setInputValue(e.target.value);
         }}
-        onClick={handleClick}
         onKeyDown={(e) => {
           if(e.key === "Enter"){
             handleClick();
