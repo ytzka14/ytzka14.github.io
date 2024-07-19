@@ -11,6 +11,7 @@ function MapQuizApp() {
   const japanPrefectures: GeoObject[] = (japan_prefectures_data as GeoJSON.FeatureCollection).features.map((feature: GeoJSON.Feature) => {
     return {
       name: feature.properties?.nam || "",
+      accept: feature.properties?.accept || [],
       shape: feature,
     }
   });
